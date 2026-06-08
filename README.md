@@ -93,16 +93,6 @@ No configuration needed. Works automatically once enabled.
 
 Theoretically upward compatible with all dependencies, provided that the hooked APIs and methods remain unchanged.
 
-## Building from Source
-
-```bash
-git clone https://github.com/<your-username>/TaczEventCompatible.git
-cd TaczEventCompatible
-./gradlew build
-```
-
-The output JAR will be at `build/reobfJar/output.jar`.
-
 ## Project Structure
 
 ```
