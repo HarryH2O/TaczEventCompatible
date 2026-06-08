@@ -57,7 +57,7 @@ TACZ 子弹命中玩家
 ## 依赖
 
 - **服务端**：任意 Forge + Bukkit 混合端（Mohist、CatServer、Arclight 等）
-- **TACZ**：服务器需安装 [Timeless and Classics Zero](https://github.com/MCModdingAnchor/TACZ)
+- **TACZ**：服务器需安装 [Timeless and Classics Zero](https://github.com/MCModderAnchor/TACZ)
 - **PVPArena**：版本 2.1.0+
 
 ## 安装
