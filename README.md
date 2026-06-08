@@ -1,6 +1,6 @@
 # TaczEventCompatible
 
-A **PVPArena module** that fixes compatibility between the [Timeless and Classics Zero (TACZ)](https://github.com/MCModdingAnchor/TACZ) firearm mod and [PVPArena](https://github.com/slipcor/pvparena) on hybrid servers (Forge + Bukkit).
+A **PVPArena module** that fixes compatibility between the [Timeless and Classics Zero (TACZ)](https://github.com/MCModderAnchor/TACZ) firearm mod and [PVPArena](https://github.com/Eredrim/pvparena) on hybrid servers (Forge + Bukkit).
 
 [中文文档](README_zh-CN.md)
 
