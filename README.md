@@ -56,7 +56,7 @@ TACZ Bullet Hits Player
 ## Requirements
 
 - **Server**: Any Forge + Bukkit hybrid server (Mohist, CatServer, Arclight, etc.)
-- **TACZ**: [Timeless and Classics Zero](https://github.com/MCModdingAnchor/TACZ) must be installed on the server
+- **TACZ**: [Timeless and Classics Zero](https://github.com/MCModderAnchor/TACZ) must be installed on the server
 - **PVPArena**: Version 2.1.0+
 
 ## Installation
