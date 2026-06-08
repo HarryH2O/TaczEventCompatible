@@ -1,0 +1,113 @@
+import java.text.SimpleDateFormat
+
+SimpleDateFormat FORMAT = new SimpleDateFormat("MMdd-HHmmss")
+FORMAT.setTimeZone(TimeZone.getTimeZone("UTC"))
+
+buildscript {
+    repositories {
+        maven { url = "https://plugins.gradle.org/m2/" }
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
+        maven { url = uri("https://maven.aliyun.com/repository/public/") }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '[6.0,6.2)'
+        classpath 'org.parchmentmc:librarian:1.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+group = 'com.Harry_H2O'
+version = 'PA_2.1.0+Forge_47.2.0'
+archivesBaseName = 'pa_m_TaczEventCompatible'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+minecraft {
+    mappings channel: 'parchment', version: '2023.08.20-1.20.1'
+    runs {
+        client {
+            workingDirectory project.file('run/client')
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                taczeventcompatible {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file('run/server')
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                taczeventcompatible {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    maven { url = uri("https://maven.aliyun.com/repository/public/") }
+    mavenCentral()
+    maven {
+        name = 'spigot-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/groups/public/'
+    }
+    maven {
+        name = 'eredrim-repo'
+        url = 'https://repo.eredrim.fr/repository/maven-public/'
+    }
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    mavenLocal()
+    flatDir {
+        dir 'libs'
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+
+    implementation 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
+    implementation 'net.slipcor:pvparena:2.0.0-SNAPSHOT'
+
+    implementation files('libs/tacz-1.20.1-1.1.7-hotfix.jar')
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    filteringCharset = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Implementation-Title": project.name,
+            "Implementation-Version": project.version,
+            "Name": "TaczEventCompatible"
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
