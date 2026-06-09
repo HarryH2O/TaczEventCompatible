@@ -36,7 +36,7 @@
 
 ## 安装
 
-本模块的安装方式与普通模块相同。安装步骤请参阅文档中的[模块页面](../modules.md#installing-modules)。
+本模块的安装方式与普通模块相同。安装步骤请参阅文档中的[模块页面](https://github.com/Eredrim/pvparena/blob/master/doc/modules.md#installing-modules)。
 
 1. 将模块 JAR 放入 `plugins/pvparena/mods/` 目录
 2. 在竞技场配置中添加 `TaczEventCompatible`：
