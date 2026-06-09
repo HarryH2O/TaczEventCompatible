@@ -1,6 +1,6 @@
 # TaczEventCompatible
 
-> ℹ️ **Notice:** This is an **unofficial** community module, not affiliated with the PVPArena project. If you need help, please visit the [PVPArena Discord](https://discord.gg/pvparena) and ping **@Harry_H2O**, or join the PVPArena Chinese Community QQ chat group **1018932075**.
+> ℹ️ **Notice:** This is an **unofficial** community module, not affiliated with the PVPArena project. If you need help, please visit the [PVPArena Discord](https://discord.com/invite/a8NhSsXKVQ) and ping **@Harry_H2O**, or join the PVPArena Chinese Community QQ chat group **1018932075**.
 
 ## Description
 
