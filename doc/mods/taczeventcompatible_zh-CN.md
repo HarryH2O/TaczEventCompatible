@@ -1,6 +1,6 @@
 # TaczEventCompatible
 
-> ℹ️ **注意：** 这是一个**非官方**社区模块，与 PVPArena 项目无关。如需帮助，请访问 [PVPArena Discord](https://discord.gg/pvparena) 并 @**Harry_H2O**。或加入 PVPArena 中文社区 QQ 群 **1018932075**。
+> ℹ️ **注意：** 这是一个**非官方**社区模块，与 PVPArena 项目无关。如需帮助，请访问 [PVPArena Discord](https://discord.com/invite/a8NhSsXKVQ) 并 @**Harry_H2O**。或加入 PVPArena 中文社区 QQ 群 **1018932075**。
 
 ## 描述
 
