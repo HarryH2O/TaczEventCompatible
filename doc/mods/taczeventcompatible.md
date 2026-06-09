@@ -36,7 +36,7 @@ This module intercepts TACZ damage events and re-applies the damage with the cor
 
 ## Installation
 
-Installation of this module can be done in a normal way. You'll find installation process in [modules page](../modules.md#installing-modules) of the doc.
+Installation of this module can be done in a normal way. You'll find installation process in [modules page](https://github.com/Eredrim/pvparena/blob/master/doc/modules.md#installing-modules) of the doc.
 
 1. Place the module JAR in `plugins/pvparena/mods/`
 2. Add `TaczEventCompatible` to your arena's module list:
